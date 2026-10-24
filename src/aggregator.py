@@ -42,7 +42,8 @@ REGIONS = [
     ("Netherlands", r"(?i)(荷兰|荷蘭|netherlands|\bnl\b|amsterdam|🇳🇱)"),
     ("France", r"(?i)(法国|法國|france|\bfr\b|paris|🇫🇷)"),
     ("Germany", r"(?i)(德国|德國|germany|\bde\b|frankfurt|🇩🇪)"),
-    ("United Kingdom", r"(?i)(英国|英國|united[\s_-]*kingdom|\buk\b|london|🇬🇧)"),
+    # Avoid matching ".uk" hostname suffixes; keep the pattern Go RE2-compatible.
+    ("United Kingdom", r"(?i)(英国|英國|united[\s_-]*kingdom|(^|[^.\w])uk([^.\w]|$)|london|🇬🇧)"),
     ("South Korea", r"(?i)(韩国|韓國|south[\s_-]*korea|\bkr\b|seoul|🇰🇷)"),
     ("Canada", r"(?i)(加拿大|canada|\bca\b|toronto|🇨🇦)"),
     ("Australia", r"(?i)(澳大利亚|澳洲|australia|\bau\b|sydney|🇦🇺)"),
@@ -497,6 +498,9 @@ def write_v2rayn_subscription(path: Path, proxies):
     return len(uris)
 
 def valid_proxy(p, keep):
+    # Preserve internal aggregation metadata across normalization.
+    src = p.get("_source")
+    orig = p.get("_original_name")
     p2 = normalize_proxy(p)
     if p2 is None:
         return False
@@ -510,6 +514,10 @@ def valid_proxy(p, keep):
         return False
     if typ in ("trojan", "hysteria2") and not p2.get("password"):
         return False
+    if src is not None:
+        p2["_source"] = src
+    if orig is not None:
+        p2["_original_name"] = orig
     p.clear()
     p.update(p2)
     return True
@@ -531,6 +539,31 @@ def unique_name(base, used):
     n = f"{base} #{i}"
     used.add(n)
     return n
+
+
+def select_diverse(nodes, max_nodes):
+    """Select nodes round-robin by source before enforcing the total cap."""
+    if len(nodes) <= max_nodes:
+        return list(nodes)
+    by_source = {}
+    for node in nodes:
+        by_source.setdefault(node.get("_source", "unknown"), []).append(node)
+    picked = []
+    round_idx = 0
+    sources = sorted(by_source)
+    while len(picked) < max_nodes:
+        added = False
+        for source in sources:
+            bucket = by_source[source]
+            if round_idx < len(bucket):
+                picked.append(bucket[round_idx])
+                added = True
+                if len(picked) >= max_nodes:
+                    break
+        if not added:
+            break
+        round_idx += 1
+    return picked
 
 
 def group_url(group_name: str):
@@ -673,7 +706,7 @@ def main():
         dedup.setdefault(fingerprint(p), p)
     nodes = list(dedup.values())
     nodes.sort(key=lambda p: (region_of(p.get("_original_name", "")), p.get("_source", ""), p.get("_original_name", "")))
-    nodes = nodes[:max_nodes]
+    nodes = select_diverse(nodes, max_nodes)
 
     status = {
         "generated_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
