@@ -38,6 +38,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run regression tests
+        run: python tests/test_regression.py
+
       - name: Build subscriptions
         run: python src/aggregator.py
 
