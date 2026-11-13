@@ -1,95 +1,82 @@
 OT | au1rxx | hysteria2-1827145136
-OT | pawdroid | 乌克兰+V2CROSS.COM
+HK | pawdroid | 香港+Amazon数据中心
 OT | steam100 | HTTP-1
-DE | zhuhai | DE - zhuhai.uk
+FR | zhuhai | FR - zhuhai.uk
 OT | au1rxx | hysteria2-1827145159
-OT | pawdroid | 伊拉克+V2CROSS.COM
-OT | steam100 | HTTP-10
-HK | zhuhai | HK - zhuhai.uk
+OT | pawdroid | 巴西+圣保罗
+OT | steam100 | HTTP-3
+FR | zhuhai | FR - zhuhai.uk 02
 OT | au1rxx | hysteria2-1827145501
-OT | pawdroid | 伊拉克+V2CROSS.COM #2
-OT | steam100 | HTTP-11
-HK | zhuhai | HK - zhuhai.uk 02
-OT | au1rxx | hysteria2-1827145632
-OT | pawdroid | 北美地区+V2CROSS.COM
-OT | steam100 | HTTP-12
-JP | zhuhai | JP - zhuhai.uk
-OT | au1rxx | hysteria2-1827145791
-OT | pawdroid | 巴西+V2CROSS.COM
-OT | steam100 | HTTP-4
-JP | zhuhai | JP - zhuhai.uk 02
-OT | au1rxx | hysteria2-1827145810
-OT | pawdroid | 巴西+V2CROSS.COM #2
-OT | steam100 | HTTP-6
-NL | zhuhai | NL - zhuhai.uk
-OT | au1rxx | hysteria2-1827145886
 OT | pawdroid | 新西兰+V2CROSS.COM
-OT | steam100 | HTTP-8
-NL | zhuhai | NL - zhuhai.uk 02
-OT | au1rxx | hysteria2-1827187993
-OT | pawdroid | 瑞典+V2CROSS.COM
-OT | steam100 | HTTP-9
-NL | zhuhai | NL - zhuhai.uk 03
-OT | au1rxx | hysteria2-1827534250
-OT | pawdroid | 瑞士+V2CROSS.COM
+OT | steam100 | HTTP-6
+FR | zhuhai | FR - zhuhai.uk 03
+OT | au1rxx | hysteria2-1827145632
+OT | pawdroid | 新西兰+V2CROSS.COM #2
+OT | steam100 | HTTP-7
+DE | zhuhai | DE - zhuhai.uk
+OT | au1rxx | hysteria2-1827145791
+OT | pawdroid | 新西兰+V2CROSS.COM #3
 OT | steam100 | SOCKS5-2
-OT | zhuhai | ID - zhuhai.uk
-OT | au1rxx | hysteria2-1828150748
-OT | pawdroid | 立陶宛+V2CROSS.COM
-OT | steam100 | SOCKS5-3
-OT | zhuhai | IE - zhuhai.uk
-OT | au1rxx | hysteria2-1828371253
-OT | pawdroid | 罗马尼亚+V2CROSS.COM
+HK | zhuhai | HK - zhuhai.uk
+OT | au1rxx | hysteria2-1827145810
+OT | pawdroid | 西班牙+V2CROSS.COM
+OT | steam100 | SOCKS5-4
+HK | zhuhai | HK - zhuhai.uk 02
+OT | au1rxx | hysteria2-1827145886
+SG | pawdroid | 新加坡+亚马逊(Amazon)公司数据中心
 OT | steam100 | SOCKS5-5
-OT | zhuhai | IE - zhuhai.uk 02
+HK | zhuhai | HK - zhuhai.uk 03
+OT | au1rxx | hysteria2-1827187993
+US | pawdroid | 美国+得克萨斯州
+JP | zhuhai | JP - zhuhai.uk
+OT | au1rxx | hysteria2-1827534250
+NL | zhuhai | NL - zhuhai.uk
+OT | au1rxx | hysteria2-1828150748
+NL | zhuhai | NL - zhuhai.uk 02
+OT | au1rxx | hysteria2-1828371253
+NL | zhuhai | NL - zhuhai.uk 03
 OT | au1rxx | hysteria2-1828371354
-OT | pawdroid | 罗马尼亚+V2CROSS.COM #2
-OT | steam100 | SOCKS5-7
-OT | zhuhai | IE - zhuhai.uk 03
+NL | zhuhai | NL - zhuhai.uk 04
 OT | au1rxx | hysteria2-1828371510
-OT | pawdroid | 罗马尼亚+V2CROSS.COM #3
-OT | zhuhai | PL - zhuhai.uk 01
+OT | zhuhai | AL - zhuhai.uk
 OT | au1rxx | hysteria2-1828371571
-OT | pawdroid | 罗马尼亚+V2CROSS.COM #4
-SG | zhuhai | SG - zhuhai.uk
+OT | zhuhai | EE - zhuhai.uk 01
 OT | au1rxx | hysteria2-1828371613
-OT | pawdroid | 罗马尼亚+V2CROSS.COM #5
-KR | zhuhai | KR - zhuhai.uk
+OT | zhuhai | ES - zhuhai.uk 01
 OT | au1rxx | hysteria2-1828371633
-US | pawdroid | 美国+CloudFlare节点
-KR | zhuhai | KR - zhuhai.uk 02
+OT | zhuhai | ID - zhuhai.uk
 OT | au1rxx | hysteria2-1828371651
-US | pawdroid | 美国+FDC芝加哥机房
-US | zhuhai | US - zhuhai.uk
+OT | zhuhai | IE - zhuhai.uk
 OT | au1rxx | hysteria2-1828371657
-US | pawdroid | 美国+V2CROSS.COM
-US | zhuhai | US - zhuhai.uk 01
+OT | zhuhai | IL - zhuhai.uk
 OT | au1rxx | hysteria2-1828371668
-US | pawdroid | 美国+V2CROSS.COM #2
-US | zhuhai | US - zhuhai.uk 02
+OT | zhuhai | IT - zhuhai.uk
 OT | au1rxx | hysteria2-1828372350
-US | zhuhai | US - zhuhai.uk 03
+OT | zhuhai | IT - zhuhai.uk 02
 OT | au1rxx | hysteria2-1828372412
-US | zhuhai | US - zhuhai.uk 04
+OT | zhuhai | LT - zhuhai.uk
 OT | au1rxx | hysteria2-1828372442
-US | zhuhai | US - zhuhai.uk 05
+OT | zhuhai | PL - zhuhai.uk
 OT | au1rxx | hysteria2-1828372531
-US | zhuhai | US - zhuhai.uk 06
+OT | zhuhai | ZA - zhuhai.uk
 OT | au1rxx | hysteria2-1828373224
-US | zhuhai | US - zhuhai.uk 07
+RU | zhuhai | RU - zhuhai.uk
 OT | au1rxx | hysteria2-1828373435
-US | zhuhai | US - zhuhai.uk 08
+RU | zhuhai | RU - zhuhai.uk 01
 OT | au1rxx | hysteria2-1828373437
-US | zhuhai | US - zhuhai.uk 09
+RU | zhuhai | RU - zhuhai.uk 02
 OT | au1rxx | hysteria2-1828373530
-US | zhuhai | US - zhuhai.uk 10
+SG | zhuhai | SG - zhuhai.uk
 OT | au1rxx | hysteria2-1828373609
-US | zhuhai | US - zhuhai.uk 11
+SG | zhuhai | SG - zhuhai.uk 02
 OT | au1rxx | hysteria2-1828373659
-US | zhuhai | US - zhuhai.uk 12
+KR | zhuhai | KR - zhuhai.uk
 OT | au1rxx | hysteria2-1828374270
+KR | zhuhai | KR - zhuhai.uk 02
 OT | au1rxx | hysteria2-1828374520
+US | zhuhai | US - zhuhai.uk
 OT | au1rxx | hysteria2-1828374754
+US | zhuhai | US - zhuhai.uk 02
 OT | au1rxx | hysteria2-1828374855
 OT | au1rxx | hysteria2-1828528935
 OT | au1rxx | hysteria2-1828529280
@@ -298,3 +285,16 @@ OT | au1rxx | shadowsocks-1930537302
 OT | au1rxx | shadowsocks-1932646633
 OT | au1rxx | shadowsocks-1933857884
 OT | au1rxx | shadowsocks-1939844061
+OT | au1rxx | shadowsocks-1939844077
+OT | au1rxx | shadowsocks-1945028329
+OT | au1rxx | shadowsocks-1947294092
+OT | au1rxx | trojan-1827148746
+OT | au1rxx | trojan-1827148859
+OT | au1rxx | trojan-1827148954
+OT | au1rxx | trojan-1827149109
+OT | au1rxx | trojan-1827149167
+OT | au1rxx | trojan-1827149305
+OT | au1rxx | trojan-1827149383
+OT | au1rxx | trojan-1827149417
+OT | au1rxx | trojan-1827149560
+OT | au1rxx | trojan-1827149654
