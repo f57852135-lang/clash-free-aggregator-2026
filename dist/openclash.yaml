@@ -18,23 +18,16 @@ proxies:
   password: d7563108-615c-4338-a7bd-77f359869a4a
   tls: true
   sni: hk.catxstar.com
-  skip-cert-verify: true
 - name: OT | steam100 | HTTP-1
   type: http
   server: 134.199.192.3
   port: 3128
-- name: AU | zhuhai | AU - zhuhai.uk
-  type: vless
-  server: zfapi.zalolink.com
-  port: 54528
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+- name: CA | zhuhai | CA - zhuhai.uk
+  type: http
+  server: 198.44.157.27
+  port: 9443
   tls: true
-  servername: www.apple.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1827145159
   password: usqmqUKJFIlCmvkCNSY64L3k
   port: 443
@@ -42,24 +35,33 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- name: 'HK | pawdroid | 香港+葵兴数据中心 #2'
-  type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20027
+- name: JP | pawdroid | 日本+东京都Amazon数据中心
+  type: vless
+  server: zfapi.zalolink.com
+  port: 30322
   udp: true
-  password: d7563108-615c-4338-a7bd-77f359869a4a
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
   tls: true
-  sni: hk.catxstar.com
-- name: OT | steam100 | HTTP-2
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: OT | steam100 | HTTP-3
   type: http
-  server: 34.43.46.91
-  port: 80
-- name: DE | zhuhai | DE - zhuhai.uk
-  type: ss
-  server: 47.254.169.3
+  server: 184.75.221.82
+  port: 3118
+- name: FR | zhuhai | FR - zhuhai.uk
+  type: http
+  server: 84.235.228.156
   port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 84.235.228.156
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1827145501
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -67,32 +69,31 @@ proxies:
   skip-cert-verify: true
   sni: vpn-tw-002.fastervpn.world
   type: hysteria2
-- name: OT | pawdroid | 塞舌尔+V2CROSS.COM
+- name: 'JP | pawdroid | 日本+东京都Amazon数据中心 #2'
   type: vless
-  server: 196.199.122.2
-  port: 443
+  server: zfapi.zalolink.com
+  port: 54528
   udp: true
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   network: tcp
   tls: true
   reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: firefox
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: ios
   flow: xtls-rprx-vision
-- name: OT | steam100 | HTTP-3
+- name: OT | steam100 | HTTP-6
   type: http
-  server: 184.75.221.82
-  port: 3118
-- name: DE | zhuhai | DE - zhuhai.uk 02
-  type: http
-  server: 87.106.223.158
+  server: 34.43.46.91
+  port: 80
+- name: DE | zhuhai | DE - zhuhai.uk 01
+  type: ss
+  server: 47.85.201.22
   port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
 - name: OT | au1rxx | hysteria2-1827145632
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
   port: 33333
@@ -100,26 +101,29 @@ proxies:
   skip-cert-verify: true
   sni: 155.248.209.237
   type: hysteria2
-- name: OT | pawdroid | 巴西+V2CROSS.COM
-  type: hysteria2
-  server: bl1.nexfile.net
-  port: 4444
+- name: OT | pawdroid | 新西兰+V2CROSS.COM
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
-- name: OT | steam100 | SOCKS5-4
+- name: OT | steam100 | SOCKS5-2
   type: socks5
-  server: 107.174.30.93
+  server: 47.252.47.39
   port: 1080
-- name: DE | zhuhai | DE - zhuhai.uk 03
-  type: http
-  server: 158.173.154.3
-  port: 9002
-  username: 'null'
-  password: 'null'
+- name: DE | zhuhai | DE - zhuhai.uk 02
+  type: vless
+  server: luminexorizon.ink
+  port: 443
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  udp: true
+  network: grpc
   tls: true
-  sni: 158.173.154.3
-  skip-cert-verify: true
+  servername: luminexorizon.ink
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
 - name: OT | au1rxx | hysteria2-1827145791
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -127,23 +131,23 @@ proxies:
   skip-cert-verify: true
   sni: whatsapp.com
   type: hysteria2
-- name: OT | pawdroid | 新西兰+V2CROSS.COM
+- name: 'OT | pawdroid | 新西兰+V2CROSS.COM #2'
   type: ss
-  server: 202.50.253.45
+  server: 202.50.253.36
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: OT | steam100 | SOCKS5-5
+- name: OT | steam100 | SOCKS5-4
   type: socks5
-  server: 107.174.30.92
+  server: 47.251.166.203
   port: 1080
 - name: HK | zhuhai | HK - zhuhai.uk
   type: http
-  server: 119.28.24.235
-  port: 3128
+  server: fan.240104.xyz
+  port: 443
   tls: true
-  sni: 119.28.24.235
+  sni: fan.240104.xyz
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1827145810
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -152,25 +156,29 @@ proxies:
   skip-cert-verify: true
   sni: t.me
   type: hysteria2
-- name: 'OT | pawdroid | 新西兰+V2CROSS.COM #2'
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: OT | pawdroid | 爱沙尼亚+V2CROSS.COM
+  type: vless
+  server: 196.196.148.85
+  port: 443
   udp: true
-- name: OT | steam100 | SOCKS5-6
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: OT | steam100 | SOCKS5-5
   type: socks5
-  server: 107.174.30.94
-  port: 1080
+  server: 104.238.100.115
+  port: 45314
 - name: HK | zhuhai | HK - zhuhai.uk 02
   type: http
-  server: fan.240104.xyz
+  server: 202.85.53.25
   port: 443
-  username: 'null'
-  password: 'null'
   tls: true
-  sni: fan.240104.xyz
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1827145886
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -178,31 +186,24 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.29
   type: hysteria2
-- name: OT | pawdroid | 西班牙+V2CROSS.COM
+- name: 'OT | pawdroid | 爱沙尼亚+V2CROSS.COM #2'
   type: vless
-  server: 196.196.149.80
+  server: 196.196.148.76
   port: 443
   udp: true
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   network: tcp
   tls: true
   reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: chrome
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl20.h1clayd.shop
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: OT | steam100 | SOCKS5-7
-  type: socks5
-  server: 192.169.140.98
-  port: 45739
 - name: JP | zhuhai | JP - zhuhai.uk
-  type: http
-  server: fan.587475.xyz
-  port: 443
-  tls: true
-  sni: fan.587475.xyz
-  skip-cert-verify: true
+  type: socks5
+  server: 101.36.104.46
+  port: 10808
 - name: OT | au1rxx | hysteria2-1827187993
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
   port: 33333
@@ -210,7 +211,7 @@ proxies:
   skip-cert-verify: true
   sni: hy2.123266.xyz
   type: hysteria2
-- name: 'OT | pawdroid | 西班牙+V2CROSS.COM #2'
+- name: OT | pawdroid | 西班牙+V2CROSS.COM
   type: vless
   server: 196.196.149.81
   port: 443
@@ -224,19 +225,10 @@ proxies:
   servername: 7aa271t.es1.h1clayd.click
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: OT | steam100 | SOCKS5-8
+- name: JP | zhuhai | JP - zhuhai.uk 02
   type: socks5
-  server: 45.61.188.134
-  port: 44499
-- name: NL | zhuhai | NL - zhuhai.uk
-  type: http
-  server: 51.159.225.196
-  port: 23856
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 51.159.225.196
-  skip-cert-verify: true
+  server: 101.36.104.239
+  port: 10808
 - name: OT | au1rxx | hysteria2-1827534250
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -244,16 +236,20 @@ proxies:
   skip-cert-verify: true
   sni: 127.0.0.1
   type: hysteria2
-- name: NL | zhuhai | NL - zhuhai.uk 01
-  type: vless
-  server: base.hosamobenl.co.uk
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+- name: US | pawdroid | 美国+V2CROSS.COM
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
-  network: tcp
+- name: NL | zhuhai | NL - zhuhai.uk
+  type: http
+  server: 51.159.225.196
+  port: 23856
   tls: true
-  servername: base.hosamobenl.co.uk
-  client-fingerprint: chrome
+  sni: 51.159.225.196
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828150748
   password: f87376e17da040ed04c9665ce8972930
   port: 50160
@@ -261,14 +257,9 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
 - name: NL | zhuhai | NL - zhuhai.uk 02
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 84.17.47.148
-  skip-cert-verify: true
+  type: socks5
+  server: 45.61.129.165
+  port: 9050
 - name: OT | au1rxx | hysteria2-1828371253
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -277,14 +268,19 @@ proxies:
   sni: 103.115.109.49
   type: hysteria2
 - name: NL | zhuhai | NL - zhuhai.uk 03
-  type: http
-  server: 51.159.225.196
-  port: 23856
-  username: 'null'
-  password: None
+  type: vless
+  server: 31.77.28.68
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  sni: 51.159.225.196
-  skip-cert-verify: true
+  servername: nl2.soshelper.space
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
+    short-id: 6562cf617728186e
 - name: OT | au1rxx | hysteria2-1828371354
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -292,15 +288,20 @@ proxies:
   skip-cert-verify: true
   sni: speedtest.tinkoff.ru
   type: hysteria2
-- name: NL | zhuhai | NL - zhuhai.uk 04
-  type: http
-  server: 84.17.47.147
-  port: 9002
-  username: 'null'
-  password: None
+- name: NL | zhuhai | NL - zhuhai.uk 05
+  type: vless
+  server: 31.77.28.173
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  sni: 84.17.47.147
-  skip-cert-verify: true
+  servername: nl4.soshelper.space
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
+    short-id: e06e30590f288e0f
 - name: OT | au1rxx | hysteria2-1828371510
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -308,12 +309,20 @@ proxies:
   skip-cert-verify: true
   sni: css.rbxcdn.com
   type: hysteria2
-- name: OT | zhuhai | IE - zhuhai.uk
-  type: http
-  server: 18.200.158.139
+- name: OT | zhuhai | CY - zhuhai.uk 01
+  type: vless
+  server: 194.55.167.133
   port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  skip-cert-verify: true
+  servername: cy1.gofizz.in
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: XSh3jB8zXtqpI38glgwN2Bn5imxN8Rkyc39LeBSD8BQ
+    short-id: 24f1fa53275b
 - name: OT | au1rxx | hysteria2-1828371571
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -321,12 +330,13 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: OT | zhuhai | IL - zhuhai.uk
+- name: OT | zhuhai | ES - zhuhai.uk
   type: http
-  server: 62.90.77.30
-  port: 443
+  server: 80.24.34.107
+  port: 8090
+  username: 'null'
+  password: 'null'
   tls: true
-  sni: 62.90.77.30
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828371613
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -337,7 +347,7 @@ proxies:
   type: hysteria2
 - name: OT | zhuhai | IT - zhuhai.uk
   type: ss
-  server: 202.50.253.36
+  server: 202.50.253.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -348,13 +358,12 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.174
   type: hysteria2
-- name: OT | zhuhai | MK - zhuhai.uk
-  type: http
-  server: 185.225.28.50
-  port: 443
-  tls: true
-  sni: 185.225.28.50
-  skip-cert-verify: true
+- name: OT | zhuhai | IT - zhuhai.uk 02
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: OT | au1rxx | hysteria2-1828371651
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -362,12 +371,12 @@ proxies:
   skip-cert-verify: true
   sni: vk.com
   type: hysteria2
-- name: OT | zhuhai | MX - zhuhai.uk
-  type: socks5
-  server: 144.225.47.158
-  port: 42000
-  username: DJy1T0dt
-  password: sZnD8GTz
+- name: OT | zhuhai | PL - zhuhai.uk
+  type: http
+  server: 37.120.156.18
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828371657
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -375,12 +384,18 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.89
   type: hysteria2
-- name: OT | zhuhai | TH - zhuhai.uk
-  type: socks5
-  server: 103.14.164.126
-  port: 42000
-  username: route164JIa2CBPxfy
-  password: VAwyJQX0iKMJiyCw5UVK9wGH
+- name: OT | zhuhai | SE - zhuhai.uk
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  servername: ns-api-gw.galioncc.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
 - name: OT | au1rxx | hysteria2-1828371668
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -388,12 +403,19 @@ proxies:
   skip-cert-verify: true
   sni: t.me
   type: hysteria2
-- name: OT | zhuhai | TH - zhuhai.uk 02
-  type: socks5
-  server: 131.143.142.21
-  port: 62000
-  username: uhugtm4f
-  password: oogf0v53
+- name: OT | zhuhai | SE - zhuhai.uk 01
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  network: tcp
+  tls: true
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
 - name: OT | au1rxx | hysteria2-1828372350
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
   port: 33333
@@ -401,12 +423,19 @@ proxies:
   skip-cert-verify: true
   sni: 155.248.209.2
   type: hysteria2
-- name: OT | zhuhai | TH - zhuhai.uk 03
-  type: socks5
-  server: 192.204.15.135
-  port: 42000
-  username: X3s3JteD
-  password: mpbK00Pl
+- name: OT | zhuhai | SE - zhuhai.uk 02
+  type: vless
+  server: 88.216.214.159
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  network: tcp
+  tls: true
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
 - name: OT | au1rxx | hysteria2-1828372412
   password: 099830134df5ac3a04a4b21d39b8c395
   port: 50160
@@ -414,12 +443,12 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: OT | zhuhai | TH - zhuhai.uk 04
-  type: socks5
-  server: 168.222.8.4
-  port: 42000
-  username: JPjarpW3
-  password: ao3W5ZML
+- name: OT | zhuhai | VN - zhuhai.uk
+  type: http
+  server: 157.66.81.25
+  port: 8443
+  tls: true
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828372442
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -485,11 +514,21 @@ proxies:
   sni: css.rbxcdn.com
   type: hysteria2
 - name: SG | zhuhai | SG - zhuhai.uk
-  type: socks5
-  server: 66.80.2.252
-  port: 62000
-  username: usereb7d
-  password: c0a34a
+  type: vless
+  server: 172.104.48.194
+  port: 443
+  uuid: a28d0884-193d-4591-aa64-8638ba1481ce
+  tls: true
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  reality-opts:
+    public-key: u_4r8NRmRsN5Ndbt0koyC73DLC7mCcK4wAA0YiIR4ko
+    short-id: b0af872e
 - name: OT | au1rxx | hysteria2-1828373437
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -497,12 +536,11 @@ proxies:
   skip-cert-verify: true
   sni: css.rbxcdn.com
   type: hysteria2
-- name: SG | zhuhai | SG - zhuhai.uk 02
+- name: KR | zhuhai | KR - zhuhai.uk
   type: socks5
-  server: 47.236.168.243
-  port: 1080
-  username: '8888'
-  password: '8888'
+  server: 121.169.46.116
+  port: 1090
+  username: VDJjbE0wUWxNMFE2Og==
 - name: OT | au1rxx | hysteria2-1828373530
   password: 84a506ca5aca505696a454d828420b3f
   port: 50160
@@ -510,11 +548,13 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: KR | zhuhai | KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: VDJjbE0wUWxNMFE2Og==
+- name: US | zhuhai | US - zhuhai.uk
+  type: http
+  server: 38.28.185.166
+  port: 443
+  tls: true
+  sni: 38.28.185.166
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828373609
   password: 099830134df5ac3a04a4b21d39b8c395
   port: 50160
@@ -522,20 +562,13 @@ proxies:
   skip-cert-verify: true
   sni: google.com
   type: hysteria2
-- name: KR | zhuhai | KR - zhuhai.uk 02
-  type: vless
-  server: saas.sin.fan
+- name: US | zhuhai | US - zhuhai.uk 02
+  type: http
+  server: 66.135.172.202
   port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   tls: true
-  servername: v2n6.11676767.xyz
+  sni: 66.135.172.202
   skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /collect/go.php/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFRfA1MBBl1WDUpYElFeVhQDWV0SQwEWQlpGWRoNA1EUBxk=
-    headers:
-      Host: v2n6.11676767.xyz
 - name: OT | au1rxx | hysteria2-1828373659
   password: f87376e17da040ed04c9665ce8972930
   port: 50160
@@ -543,14 +576,12 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk
+- name: US | zhuhai | US - zhuhai.uk 03
   type: http
-  server: 162.243.146.243
+  server: 172.64.68.89
   port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
   tls: true
-  sni: a2f392f3.acsnet.co
+  sni: 172.64.68.89
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828374270
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
@@ -559,12 +590,11 @@ proxies:
   skip-cert-verify: true
   sni: vk.com
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 02
-  type: socks5
-  server: 23.230.200.176
-  port: 62000
-  username: u1f0cijj
-  password: ppyefe3k
+- name: US | zhuhai | US - zhuhai.uk 04
+  type: http
+  server: fan.596189.xyz
+  port: 443
+  tls: true
 - name: OT | au1rxx | hysteria2-1828374520
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   port: 50160
@@ -572,11 +602,12 @@ proxies:
   skip-cert-verify: true
   sni: css.rbxcdn.com
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 03
+- name: US | zhuhai | US - zhuhai.uk 05
   type: http
-  server: 129.153.93.183
+  server: 137.175.22.56
   port: 443
   tls: true
+  sni: 137.175.22.56
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828374754
   password: 184cdec28da5a09450803c8debcd2cc9
@@ -585,12 +616,13 @@ proxies:
   skip-cert-verify: true
   sni: 138.3.208.26
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 04
+- name: US | zhuhai | US - zhuhai.uk 06
   type: http
-  server: 24.225.10.211
-  port: 443
+  server: 18.206.28.143
+  port: 8443
+  username: 'null'
+  password: 'null'
   tls: true
-  sni: 24.225.10.211
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828374855
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -599,11 +631,12 @@ proxies:
   skip-cert-verify: true
   sni: https
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 05
+- name: US | zhuhai | US - zhuhai.uk 07
   type: http
-  server: 138.199.35.210
-  port: 9002
+  server: 137.175.22.84
+  port: 443
   tls: true
+  sni: 137.175.22.84
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828528935
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
@@ -612,12 +645,11 @@ proxies:
   skip-cert-verify: false
   sni: 152-67-200-82.liao.kdns.fr
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 06
+- name: US | zhuhai | US - zhuhai.uk 08
   type: http
-  server: 138.199.35.200
-  port: 9002
+  server: 45.145.73.240
+  port: 8443
   tls: true
-  sni: 138.199.35.200
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828529280
   password: 1671a252e2a97dc2bda4e515475931da
@@ -625,14 +657,14 @@ proxies:
   server: 132.226.226.189
   skip-cert-verify: true
   type: hysteria2
-- name: US | zhuhai | US - zhuhai.uk 07
+- name: US | zhuhai | US - zhuhai.uk 09
   type: http
-  server: 138.199.35.202
-  port: 9002
+  server: 18.206.28.143
+  port: 8443
   username: 'null'
-  password: None
+  password: 'null'
   tls: true
-  sni: 138.199.35.202
+  sni: 18.206.28.143
   skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1828529345
   password: maintell
@@ -641,6 +673,13 @@ proxies:
   skip-cert-verify: true
   sni: 152.70.237.123
   type: hysteria2
+- name: US | zhuhai | US - zhuhai.uk 10
+  type: http
+  server: 141.148.181.144
+  port: 443
+  tls: true
+  sni: 141.148.181.144
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1830343753
   password: 4291c983-c520-46ac-82cc-48f14bef573f
   port: 35013
@@ -648,6 +687,19 @@ proxies:
   skip-cert-verify: true
   sni: 129.213.91.185
   type: hysteria2
+- name: US | zhuhai | US - zhuhai.uk 11
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ushetzijji.global.ssl.fastly.net.
 - name: OT | au1rxx | hysteria2-1832764816
   password: 96ab5cd282733fd4c312a61f972f330a
   port: 443
@@ -655,6 +707,13 @@ proxies:
   skip-cert-verify: false
   sni: vp3.yysyy.online
   type: hysteria2
+- name: US | zhuhai | US - zhuhai.uk 12
+  type: http
+  server: 38.28.185.224
+  port: 443
+  tls: true
+  sni: 38.28.185.224
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1832764859
   password: github.com/Alvin9999-newpac/fanqiang
   port: 60111
@@ -662,6 +721,12 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
+- name: US | zhuhai | US - zhuhai.uk 13
+  type: http
+  server: 38.28.185.178
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: OT | au1rxx | hysteria2-1832764952
   password: 96ab5cd282733fd4c312a61f972f330a
   port: 443
@@ -2088,30 +2153,6 @@ proxies:
   server: 104.16.7.70
   skip-cert-verify: true
   sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: OT | au1rxx | trojan-1827149109
-  password: humanity
-  port: 443
-  server: 185.18.250.252
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: OT | au1rxx | trojan-1827149167
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  sni: ''
-  type: trojan
-  udp: true
-- name: OT | au1rxx | trojan-1827149305
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  skip-cert-verify: true
-  sni: ''
   type: trojan
   udp: true
 proxy-groups:
