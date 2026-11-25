@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-11-23T12:56:35Z",
+  "generated_at_utc": "2026-11-25T13:02:19Z",
   "mode": "openclash-mihomo",
   "successful_sources": 4,
   "enabled_sources": 4,
   "raw_nodes": 1738,
-  "unique_nodes": 1057,
+  "unique_nodes": 1059,
   "published_nodes": 300,
   "publication": "updated",
   "sources": [
@@ -16,43 +16,42 @@
     },
     {
       "source": "zhuhai",
-      "fetched": 26,
-      "valid": 24,
+      "fetched": 34,
+      "valid": 32,
       "error": null
     },
     {
       "source": "pawdroid",
-      "fetched": 12,
-      "valid": 12,
+      "fetched": 7,
+      "valid": 7,
       "error": null
     },
     {
       "source": "steam100",
-      "fetched": 12,
-      "valid": 12,
+      "fetched": 9,
+      "valid": 9,
       "error": null
     }
   ],
   "protocols": {
     "hysteria2": 109,
     "ss": 136,
-    "http": 22,
+    "http": 20,
+    "vless": 9,
+    "socks5": 15,
     "vmess": 1,
-    "vless": 7,
-    "socks5": 13,
-    "trojan": 12
+    "trojan": 10
   },
   "regions": {
-    "Other": 276,
-    "Germany": 3,
+    "Other": 277,
+    "Germany": 2,
     "Hong Kong": 1,
-    "United Kingdom": 2,
-    "Japan": 2,
-    "United States": 8,
-    "Netherlands": 2,
-    "Russia": 2,
+    "Japan": 1,
+    "United Kingdom": 1,
+    "United States": 10,
+    "Russia": 4,
     "Singapore": 2,
     "South Korea": 2
   },
-  "v2rayn_uris": 278
+  "v2rayn_uris": 280
 }
