@@ -1,82 +1,70 @@
 OT | au1rxx | hysteria2-1827145136
 OT | pawdroid | 新西兰+V2CROSS.COM
-OT | steam100 | HTTP-2
-DE | zhuhai | DE - zhuhai.uk
+OT | steam100 | HTTP-1
+CA | zhuhai | CA - zhuhai.uk
 OT | au1rxx | hysteria2-1827145159
 OT | pawdroid | 新西兰+V2CROSS.COM #2
-OT | steam100 | HTTP-3
-DE | zhuhai | DE - zhuhai.uk 02
+OT | steam100 | HTTP-2
+DE | zhuhai | DE - zhuhai.uk
 OT | au1rxx | hysteria2-1827145501
 OT | pawdroid | 爱沙尼亚+V2CROSS.COM
-OT | steam100 | HTTP-7
-HK | zhuhai | HK - zhuhai.uk 02
+OT | steam100 | HTTP-3
+DE | zhuhai | DE - zhuhai.uk 02
 OT | au1rxx | hysteria2-1827145632
-OT | pawdroid | 西班牙+V2CROSS.COM
-OT | steam100 | SOCKS5-1
-JP | zhuhai | JP - zhuhai.uk
+SG | pawdroid | 新加坡+Amazon数据中心
+OT | steam100 | HTTP-4
+HK | zhuhai | HK - zhuhai.uk 02
 OT | au1rxx | hysteria2-1827145791
-UK | pawdroid | 英国+V2CROSS.COM
-OT | steam100 | SOCKS5-4
-OT | zhuhai | AT - zhuhai.uk
+UK | pawdroid | 英国+伦敦南岸大学
+JP | zhuhai | JP - zhuhai.uk
 OT | au1rxx | hysteria2-1827145810
-US | pawdroid | 美国 华盛顿Cogent通信公司
-OT | steam100 | SOCKS5-5
-OT | zhuhai | BR - zhuhai.uk
+UK | pawdroid | 英国+伦敦南岸大学 #2
+NL | zhuhai | NL - zhuhai.uk
 OT | au1rxx | hysteria2-1827145886
-OT | steam100 | SOCKS5-6
-OT | zhuhai | CH - zhuhai.uk
+US | pawdroid | 美国+V2CROSS.COM
+OT | zhuhai | BR - zhuhai.uk
 OT | au1rxx | hysteria2-1827187993
-OT | steam100 | SOCKS5-8
-OT | zhuhai | ID - zhuhai.uk
-OT | au1rxx | hysteria2-1827534250
-OT | steam100 | SOCKS5-9
 OT | zhuhai | IL - zhuhai.uk
+OT | au1rxx | hysteria2-1827534250
+OT | zhuhai | MX - zhuhai.uk
 OT | au1rxx | hysteria2-1828150748
-OT | zhuhai | LV - zhuhai.uk
-OT | au1rxx | hysteria2-1828371253
 OT | zhuhai | TH - zhuhai.uk
-OT | au1rxx | hysteria2-1828371354
+OT | au1rxx | hysteria2-1828371253
 OT | zhuhai | TH - zhuhai.uk 02
-OT | au1rxx | hysteria2-1828371510
-OT | zhuhai | TH - zhuhai.uk 03
-OT | au1rxx | hysteria2-1828371571
-OT | zhuhai | TH - zhuhai.uk 04
-OT | au1rxx | hysteria2-1828371613
+OT | au1rxx | hysteria2-1828371354
 OT | zhuhai | VN - zhuhai.uk
-OT | au1rxx | hysteria2-1828371633
+OT | au1rxx | hysteria2-1828371510
 RU | zhuhai | RU - zhuhai.uk 01
-OT | au1rxx | hysteria2-1828371651
-RU | zhuhai | RU - zhuhai.uk 02
-OT | au1rxx | hysteria2-1828371657
-RU | zhuhai | RU - zhuhai.uk 03
-OT | au1rxx | hysteria2-1828371668
-RU | zhuhai | RU - zhuhai.uk 04
-OT | au1rxx | hysteria2-1828372350
+OT | au1rxx | hysteria2-1828371571
 SG | zhuhai | SG - zhuhai.uk
-OT | au1rxx | hysteria2-1828372412
+OT | au1rxx | hysteria2-1828371613
 SG | zhuhai | SG - zhuhai.uk 02
-OT | au1rxx | hysteria2-1828372442
+OT | au1rxx | hysteria2-1828371633
 KR | zhuhai | KR - zhuhai.uk
-OT | au1rxx | hysteria2-1828372531
-KR | zhuhai | KR - zhuhai.uk 02
-OT | au1rxx | hysteria2-1828373224
+OT | au1rxx | hysteria2-1828371651
+TW | zhuhai | TW - zhuhai.uk 02
+OT | au1rxx | hysteria2-1828371657
 US | zhuhai | US - zhuhai.uk
-OT | au1rxx | hysteria2-1828373435
+OT | au1rxx | hysteria2-1828371668
+US | zhuhai | US - zhuhai.uk 01
+OT | au1rxx | hysteria2-1828372350
 US | zhuhai | US - zhuhai.uk 02
-OT | au1rxx | hysteria2-1828373437
+OT | au1rxx | hysteria2-1828372412
 US | zhuhai | US - zhuhai.uk 03
-OT | au1rxx | hysteria2-1828373530
+OT | au1rxx | hysteria2-1828372442
 US | zhuhai | US - zhuhai.uk 04
-OT | au1rxx | hysteria2-1828373609
+OT | au1rxx | hysteria2-1828372531
 US | zhuhai | US - zhuhai.uk 05
-OT | au1rxx | hysteria2-1828373659
+OT | au1rxx | hysteria2-1828373224
 US | zhuhai | US - zhuhai.uk 06
+OT | au1rxx | hysteria2-1828373435
+OT | au1rxx | hysteria2-1828373437
+OT | au1rxx | hysteria2-1828373530
+OT | au1rxx | hysteria2-1828373609
+OT | au1rxx | hysteria2-1828373659
 OT | au1rxx | hysteria2-1828374270
-US | zhuhai | US - zhuhai.uk 07
 OT | au1rxx | hysteria2-1828374520
-US | zhuhai | US - zhuhai.uk 08
 OT | au1rxx | hysteria2-1828374754
-US | zhuhai | US - zhuhai.uk 09
 OT | au1rxx | hysteria2-1828374855
 OT | au1rxx | hysteria2-1828528935
 OT | au1rxx | hysteria2-1828529280
@@ -298,3 +286,15 @@ OT | au1rxx | trojan-1827149383
 OT | au1rxx | trojan-1827149417
 OT | au1rxx | trojan-1827149560
 OT | au1rxx | trojan-1827149654
+OT | au1rxx | trojan-1827188005
+OT | au1rxx | trojan-1827188168
+OT | au1rxx | trojan-1827188340
+OT | au1rxx | trojan-1827613948
+OT | au1rxx | trojan-1827938592
+OT | au1rxx | trojan-1827955817
+OT | au1rxx | trojan-1828472626
+OT | au1rxx | trojan-1849374991
+OT | au1rxx | trojan-1853341794
+OT | au1rxx | trojan-1853348743
+OT | au1rxx | trojan-1853461582
+OT | au1rxx | trojan-1853462719
